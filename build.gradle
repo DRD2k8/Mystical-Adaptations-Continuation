@@ -10,6 +10,14 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
+    repositories {
+        maven {
+            url "https://cursemaven.com"
+            content {
+                includeGroup "curse.maven"
+            }
+        }
+    }
 }
 
 base {
@@ -116,6 +124,10 @@ dependencies {
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+
+    implementation "curse.maven:cucumber-272335:7180790"
+    implementation "curse.maven:mystical-agriculture-246640:7180808"
+    implementation "curse.maven:mystical-agradditions-256247:7180792"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
