@@ -67,24 +67,7 @@ side = "BOTH"
 [[dependencies."${mod_id}"]]
 modId = "minecraft"
 type = "required"
-[[dependencies."${mod_id}"]]
-modId="cucumber"
-mandatory=true
-versionRange="[1.21.1-8.0.0,)"
-ordering="NONE"
-side="BOTH"
-[[dependencies."${mod_id}"]]
-modId="mysticalagriculture"
-mandatory=true
-versionRange="[1.21.1-8.0.0,)"
-ordering="NONE"
-side="BOTH"
-[[dependencies."${mod_id}"]]
-modId="mysticalagradditions"
-mandatory=true
-versionRange="[1.21.1-8.0.0,)"
-ordering="NONE"
-side="BOTH"
+# The other mod dependencies can't be added because it will cause the mod to fail to load correctly
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
 versionRange = "${minecraft_version_range}"
 ordering = "NONE"
