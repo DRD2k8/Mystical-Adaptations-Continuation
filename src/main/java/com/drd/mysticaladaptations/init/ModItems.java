@@ -10,6 +10,7 @@ import com.blakebr0.mysticalagriculture.item.armor.EssenceLeggingsItem;
 import com.blakebr0.mysticalagriculture.item.tool.*;
 import com.drd.mysticaladaptations.MysticalAdaptations;
 import com.drd.mysticaladaptations.api.crop.ModCropTier;
+import com.drd.mysticaladaptations.item.InsaniumUpgradeItem;
 import com.drd.mysticaladaptations.lib.ModItemTier;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -30,6 +31,7 @@ public final class ModItems {
     public static final Map<DeferredHolder<Item, Item>, Supplier<Item>> ENTRIES = new LinkedHashMap<>();
     public static final Map<DeferredHolder<Item, Item>, Supplier<Item>> GEAR_ENTRIES = new LinkedHashMap<>();
 
+    public static final DeferredHolder<Item, Item> INSANIUM_UPGRADE = register("insanium_upgrade", InsaniumUpgradeItem::new);
     public static final DeferredHolder<Item, Item> INSANIUM_SWORD = registerGear("insanium_sword", () -> new EssenceSwordItem(ModItemTier.INSANIUM, 6, 1));
     public static final DeferredHolder<Item, Item> INSANIUM_PICKAXE = registerGear("insanium_pickaxe", () -> new EssencePickaxeItem(ModItemTier.INSANIUM, 6, 1));
     public static final DeferredHolder<Item, Item> INSANIUM_SHOVEL = registerGear("insanium_shovel", () -> new EssenceShovelItem(ModItemTier.INSANIUM, 6, 1));

@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "EIE",
+    "IUI",
+    "EIE"
+  ],
+  "key": {
+    "E": {
+      "item": "mysticalagradditions:insanium_essence"
+    },
+    "I": {
+      "item": "mysticalagradditions:insanium_ingot"
+    },
+    "U": {
+      "item": "mysticalagriculture:awakened_supremium_upgrade"
+    }
+  },
+  "result": {
+    "id": "mysticaladaptations:insanium_upgrade"
+  }
+}

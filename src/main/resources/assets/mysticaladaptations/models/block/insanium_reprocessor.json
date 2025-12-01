@@ -1,8 +1,0 @@
-{
-  "parent": "block/orientable",
-  "textures": {
-    "top": "mysticaladaptations:block/insanium_reprocessor_side",
-    "front": "mysticaladaptations:block/insanium_reprocessor_front",
-    "side": "mysticaladaptations:block/insanium_reprocessor_side"
-  }
-}

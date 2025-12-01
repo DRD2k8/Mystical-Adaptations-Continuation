@@ -17,6 +17,7 @@ public final class ModCreativeModeTabs {
             .title(Component.translatable("itemGroup.mysticaladaptations"))
             .icon(() -> new ItemStack(ModItems.INSANIUM_SWORD.get()))
             .displayItems(FeatureFlagDisplayItemGenerator.create((parameters, output) -> {
+                output.accept(ModItems.INSANIUM_UPGRADE);
                 output.accept(ModItems.INSANIUM_SWORD);
                 output.accept(ModItems.INSANIUM_PICKAXE);
                 output.accept(ModItems.INSANIUM_SHOVEL);
