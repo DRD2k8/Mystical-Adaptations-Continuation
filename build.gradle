@@ -125,9 +125,13 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
+    // Required dependencies
     implementation "curse.maven:cucumber-272335:7180790"
     implementation "curse.maven:mystical-agriculture-246640:7180808"
     implementation "curse.maven:mystical-agradditions-256247:7180792"
+
+    // Optional dependencies
+    implementation("curse.maven:vampirism-become-a-vampire-233029:6544569")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
