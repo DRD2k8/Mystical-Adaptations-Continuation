@@ -1,0 +1,23 @@
+{
+  "type": "cucumber:shaped_transfer_damage",
+  "transfer_components": true,
+  "pattern": [
+    " G ",
+    "ISI",
+    " G "
+  ],
+  "key": {
+    "G": {
+      "item": "mysticalagradditions:insanium_gemstone"
+    },
+    "I": {
+      "item": "mysticalagradditions:insanium_ingot"
+    },
+    "S": {
+      "item": "mysticalagriculture:awakened_supremium_crossbow"
+    }
+  },
+  "result": {
+    "id": "mysticaladaptations:insanium_crossbow"
+  }
+}
