@@ -1,0 +1,23 @@
+{
+  "type": "cucumber:shaped_transfer_components",
+  "transfer_slot": 4,
+  "pattern": [
+    "FIF",
+    "ISI",
+    "FIF"
+  ],
+  "key": {
+    "I": {
+      "item": "mysticalextendedtier:ornium_ingot"
+    },
+    "S": {
+      "item": "mysticaladaptations:insanium_watering_can"
+    },
+    "F": {
+      "item": "mysticalagriculture:mystical_fertilizer"
+    }
+  },
+  "result": {
+    "id": "mysticalextendedtier:ornium_watering_can"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "cucumber:shaped_transfer_damage",
+  "transfer_components": true,
+  "pattern": [
+    " G ",
+    "ISI",
+    " G "
+  ],
+  "key": {
+    "G": {
+      "item": "mysticalextendedtier:ornium_gemstone"
+    },
+    "I": {
+      "item": "mysticalextendedtier:ornium_ingot"
+    },
+    "S": {
+      "item": "mysticaladaptations:insanium_shears"
+    }
+  },
+  "result": {
+    "id": "mysticalextendedtier:ornium_shears"
+  }
+}
