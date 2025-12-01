@@ -7,7 +7,7 @@
     },
     {
       "type": "mysticalagriculture:augment_enabled",
-      "augment": "mysticaladaptations:attack_aoe_iv"
+      "augment": "mysticalagriculture:adaptations_attack_aoe_iv"
     }
   ],
   "input": {
@@ -40,6 +40,6 @@
     }
   ],
   "result": {
-    "id": "mysticalagriculture:attack_aoe_iv_augment"
+    "id": "mysticalagriculture:adaptations_attack_aoe_iv_augment"
   }
 }

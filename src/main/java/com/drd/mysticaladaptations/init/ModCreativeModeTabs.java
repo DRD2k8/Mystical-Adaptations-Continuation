@@ -1,6 +1,7 @@
 package com.drd.mysticaladaptations.init;
 
 import com.blakebr0.cucumber.util.FeatureFlagDisplayItemGenerator;
+import com.blakebr0.mysticalagriculture.api.MysticalAgricultureAPI;
 import com.drd.mysticaladaptations.MysticalAdaptations;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -34,6 +35,17 @@ public final class ModCreativeModeTabs {
                 output.accept(ModItems.INSANIUM_CHESTPLATE);
                 output.accept(ModItems.INSANIUM_LEGGINGS);
                 output.accept(ModItems.INSANIUM_BOOTS);
+
+                var registry = MysticalAgricultureAPI.getAugmentRegistry();
+                for (var augment : registry.getAugments()) {
+                    var id = augment.getId();
+                    if (id != null && id.getPath().startsWith("adaptations_")) {
+                        var item = augment.getItem();
+                        if (item != null) {
+                            output.accept(item);
+                        }
+                    }
+                }
             }))
             .build());
 }

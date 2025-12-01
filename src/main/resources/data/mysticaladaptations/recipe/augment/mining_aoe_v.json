@@ -7,7 +7,7 @@
     },
     {
       "type": "mysticalagriculture:augment_enabled",
-      "augment": "mysticaladaptations:mining_aoe_v"
+      "augment": "mysticalagriculture:adaptations_mining_aoe_v"
     }
   ],
   "input": {
@@ -40,6 +40,6 @@
     }
   ],
   "result": {
-    "id": "mysticalagriculture:mining_aoe_v_augment"
+    "id": "mysticalagriculture:adaptations_mining_aoe_v_augment"
   }
 }

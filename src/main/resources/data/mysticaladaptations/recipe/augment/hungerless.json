@@ -3,7 +3,7 @@
   "neoforge:conditions": [
     {
       "type": "mysticalagriculture:augment_enabled",
-      "augment": "mysticaladaptations:hungerless"
+      "augment": "mysticalagriculture:adaptations_hungerless"
     }
   ],
   "input": {
@@ -36,6 +36,6 @@
     }
   ],
   "result": {
-    "id": "mysticalagriculture:hungerless_augment"
+    "id": "mysticalagriculture:adaptations_hungerless_augment"
   }
 }
