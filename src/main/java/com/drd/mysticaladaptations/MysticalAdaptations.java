@@ -3,6 +3,8 @@ package com.drd.mysticaladaptations;
 import com.blakebr0.mysticalagriculture.item.tool.EssenceBowItem;
 import com.blakebr0.mysticalagriculture.item.tool.EssenceCrossbowItem;
 import com.blakebr0.mysticalagriculture.item.tool.EssenceFishingRodItem;
+import com.drd.mysticaladaptations.handlers.MobDropsHandler;
+import com.drd.mysticaladaptations.handlers.TooltipHandlers;
 import com.drd.mysticaladaptations.init.ModArmorMaterials;
 import com.drd.mysticaladaptations.init.ModCreativeModeTabs;
 import com.drd.mysticaladaptations.init.ModItems;
@@ -44,7 +46,9 @@ public class MysticalAdaptations {
         modEventBus.addListener(this::addCreative);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
-        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        modContainer.registerConfig(ModConfig.Type.COMMON, com.drd.mysticaladaptations.config.ModConfig.spec);
+
+        NeoForge.EVENT_BUS.register(new MobDropsHandler());
 
         ModArmorMaterials.REGISTRY.register(modEventBus);
         ModCreativeModeTabs.REGISTRY.register(modEventBus);
@@ -67,6 +71,8 @@ public class MysticalAdaptations {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            NeoForge.EVENT_BUS.register(new TooltipHandlers());
+
             event.enqueueWork(() -> {
                 ItemProperties.register(ModItems.INSANIUM_BOW.get(), ResourceLocation.withDefaultNamespace("pull"), EssenceBowItem.getPullPropertyGetter());
                 ItemProperties.register(ModItems.INSANIUM_BOW.get(), ResourceLocation.withDefaultNamespace("pulling"), EssenceBowItem.getPullingPropertyGetter());
